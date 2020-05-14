@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+ 
+* {    
+  box-sizing: border-box;    
+}    
+    
+input[type=text], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+input[type=email], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+    
+label {    
+  padding: 12px 12px 12px 0;     
+}    
+    
+.button {
+float: right;}   
+    
+.containerS {    
+  border-radius: 5px;    
+  background-color: white;    
+  padding: 50px;    
+}    
+    
+.col-25 {    
+  float: left;    
+  width: 25%;    
+  margin-top: 6px;    
+}    
+    
+.col-75 {    
+  float: left;    
+  width: 75%;    
+  margin-top: 6px;    
+}    
+    
+/* Clear floats after the columns */    
+.row-75:after {    
+  content: "";    
+  display: table;    
+  clear: both;    
+}    
+   
+
+#para1 {
+text-align: center;
+font-family: "Lato", sans-serif; font-size: 12px;
+
+</style>    
+</head>    
+<body>    
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="copy.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="hobbies.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOBBIES</a>
+	    <a href="education.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EDUCATION</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+	<a href="test2.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FEEDBACK</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="hobbies.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOBBIES</a>
+    <a href="education.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">EDUCATION</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="test2.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FEEDBACK</a>
+</div>
+
+    <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
+  <br>
+    <h2 class="w3-wide">FEEDBACK FORM</h2>
+    <p class="w3-opacity"><i>We all need people who will give us feedback</i></p>
+	<p class="w3-opacity"><i>Either positive one or criticism, like rain, should be gentle enough to nourish a man's growth without destroying his roots</i></p>
+    <p class="w3-justify"></p>
+</div>
+<hr>
+<br>
+<br>
+<div class="containerS">    
+  <form  action="success.html" target="_blank">
+    <div class="row-75">    
+      <div class="col-25">    
+        <label for="fname">First Name</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="fname" name="firstname" placeholder="Your first name" onfocus="myFunction2(this)">    
+      </div>    
+    </div>    
+    <div class="row-75">    
+      <div class="col-25">    
+        <label for="lname">Last Name</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="lname" name="lastname" placeholder="Your last name" onfocus="myFunction2(this)">    
+      </div>    
+    </div>    
+    <div class="row-75">    
+        <div class="col-25">    
+          <label for="email">Email Address</label>    
+        </div>    
+        <div class="col-75">    
+          <input type="email" id="email" name="mailid" placeholder="Your email address" onfocus="myFunction2(this)">    
+        </div>    
+      </div>    
+    <div class="row-75">    
+      <div class="col-25">    
+        <label for="type">Type</label>    
+      </div>    
+      <div class="col-75">    
+        <select id="type" name="type">    
+            <option value="none">Select Type</option>    
+          <option value="australia">Description</option>    
+          <option value="canada">Complaint</option>     
+        </select>    
+      </div>    
+    </div>    
+    <div class="row-75">    
+      <div class="col-25">    
+        <label for="feed_back">Feedback</label>    
+      </div>    
+      <div class="col-75">    
+        <textarea id="subject" name="subject" placeholder="Let us know a penny of your thought" onfocus="myFunction2(this)" style="height:200px"></textarea>    
+      </div>    
+    </div>    
+          <div class="w3-row-padding">
+            <div class="w3-half">
+			<br>
+			<br>
+       <button onclick="myFunction()" class="w3-button w3-ripple w3-pink w3-right">Submit</button>        
+</form>  
+</div>
+</div>  
+</div>  
+<br>
+<br>
+<br>
+	
+<script>
+//window.alert ()
+function myFunction() 
+{
+    alert("Are you not a robot?");
+}
+
+//eventfocus ()
+function myFunction2(x) 
+{
+  x.style.background = "#E6E6FA";
+}
+</script>
+
+	
+</body>    
+</html>  

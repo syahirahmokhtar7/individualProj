@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+
+/* F O O T E R */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #bbb;
+  margin-top: 20px;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+#para1 {
+text-align: center;
+font-family: "Lato", sans-serif; font-size: 12px;
+
+
+.fas {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  position:relative;
+
+}
+</style>
+<body onload="window.alert('Page successfully loaded');">  
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="copy.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="hobbies.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOBBIES</a>
+	    <a href="education.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EDUCATION</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+	<a href="test2.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FEEDBACK</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="hobbies.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOBBIES</a>
+    <a href="education.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">EDUCATION</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="test2.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FEEDBACK</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+ <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+  <br>
+    <h2 class="w3-wide">FEEDBACK HAS BEEN SUBMITTED</h2>
+    <p class="w3-opacity"><i>Your time spent is highly appreciated</i></p>
+	<br>
+    <img src="./cir/yay.png" style="width:100%">
+    <p class="w3-justify"></p>
+</div>
+</div>
+
+<form action="copy.html" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+<a href="copy.html"><i class='fas fa-home w3-right' onclick="myFunction()" style='font-size:35px;color:black'></i>
+</form>
+</p>
+<br>
+<br>
+<br>
+
+
+<script>
+//event load ()
+document.write("The page is loaded successfully");
+
+//window.alert ()
+function myFunction() 
+{
+    alert("Go to the home page?");
+}
+</script>

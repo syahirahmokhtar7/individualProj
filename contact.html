@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {
+font-family: "Lato", sans-serif
+}
+.mySlides {display: none}
+
+/* C O L U M N */
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  color: black;
+  text-align:center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* S O C I A L */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #f40083;
+  color: white;
+}
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  align: center;
+}
+
+/* S O C I A L 2 */
+/* Create two equal columns that floats next to each other */
+.column2 {
+ margin-left: auto;
+ margin-right: auto;
+ width: 50%;
+ padding: 10px;
+ height: 250px; /* Should be removed. Only for demonstration */
+ color: black;
+ text-align: center;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fa-phone-square {
+  background: #33CC33;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+/* C H I P S */
+.chip {
+  display: inline-block;
+  padding: 0 25px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #FFA07A;
+  margin: 12px;
+}
+
+.chip img {
+  float:center;
+  margin: 0 10px 0 -25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+
+/* F O O T E R */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #bbb;
+  margin-top: 20px;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+#para1 {
+text-align: center;
+font-family: "Lato", sans-serif; font-size: 12px;
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="copy.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="hobbies.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOBBIES</a>
+	    <a href="education.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EDUCATION</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+	<a href="test2.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FEEDBACK</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="hobbies.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOBBIES</a>
+    <a href="education.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">EDUCATION</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="test2.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FEEDBACK</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+      <div class="mySlides w3-display-container w3-center">
+    <img src="./cir/cc.png" style="width:65%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">  
+    </div>
+  </div>
+        <div class="mySlides w3-display-container w3-center">
+    <img src="./cir/aa.png" style="width:65%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">  
+    </div>
+  </div>
+        <div class="mySlides w3-display-container w3-center">
+    <img src="./cir/bb.png" style="width:65%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">  
+    </div>
+  </div>
+          <div class="mySlides w3-display-container w3-center">
+    <img src="./cir/zzx.png" style="width:65%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">  
+    </div>
+  </div>
+          <div class="mySlides w3-display-container w3-center">
+    <img src="./cir/zzy.png" style="width:65%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">  
+    </div>
+  </div>
+          <div class="mySlides w3-display-container w3-center">
+    <img src="./cir/zz.png" style="width:65%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">  
+    </div>
+  </div>
+<hr>
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
+    <h2 class="w3-wide">CONTACT ME</h2>
+    <p class="w3-opacity"><i>Feel free to contact me for futher informations and inqueries</i></p>
+	<p class="w3-opacity"><i>Details for contact information are given below</i></p>
+    <p class="w3-justify"></p>
+	</div>
+	
+	 <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:1000px">
+	  <h2 class="w3-wide w3-center">SOCIAL MEDIA ACCOUNT</h2>
+	  <br>
+	<div class="row">
+  <div class="column" style="background-color:white;">
+	<a href="#" class="fa fa-twitter"></a>
+    <p>Tweet tweet, who's there</p>
+	<p>Let's get to know each other, follow me!</p>
+	<a href="https://twitter.com/syahirahmkhtar">Click here!</a>
+  </div>
+  <div class="column" style="background-color:white;">
+	<a href="#" class="fa fa-instagram"></a>
+    <p>#jumponthebangwagon</p>
+	<p>Wanna see some classy stuffs? Here you go! </p>
+	<a href="https://www.instagram.com/syahirahmokhtarr/">Click here!</a>
+  </div>
+  <div class="column" style="background-color:white;">
+	<a href="#" class="fa fa-facebook"></a>
+    <p>Old school but useful</p>
+	<p>Usually post my activities throughtout the year here, send me a friend request! </p>
+	<a href="https://www.facebook.com/nurul.syahiraii.3">Click here!</a>
+  </div>
+  <div class="column" style="background-color:white; ">
+	<a href="#" class="fa fa-snapchat-ghost"></a>
+    <p>Don't let the streak die!</p>
+	<p>Here is my snapcode </p>
+	<img src="./cir/snapcode.png" style="width:50%" class="center">
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<h2 class="w3-wide w3-center">EMAIL</h2>
+<br>
+	<div class="row2">
+  <div class="column2" style="background-color:white;">
+	<a href="#" class="fa fa-google"></a>
+    <p>Hit me up on :</p>
+	<p> Gmail : syahirahmokhtar7@gmail.com </p>
+	<p> Icloud : syahirahmokhtarr7@icloud.com </p>
+	<p>Will usually reply within 2 hours!</p>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<h2 class="w3-wide w3-center">PHONE</h2>
+<br>
+	<div class="row2">
+ <div class="column2" style="background-color:white;">
+	<a href="#" class="fa fa-phone-square"></a>
+    <p> Reach me on : </p>
+	<p> Maxis : 011-62173817 </p>
+	<p> Umobile : 011-25566277 </p>
+	<p>Call only for urgent matter, anything you can ws or text me! </p>
+  </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<h2 class="w3-wide w3-center">ALTERNATIVE CONTACT</h2>
+<br>
+<div class="chip">
+  <img src="./cir/photo_2020-05-08_19-19-32.jpg" alt="Person" width="96" height="96">
+  Mokhtar (father) - 0199133533
+</div>
+<div class="chip">
+  <img src="./cir/photo_2020-05-08_19-19-31.jpg" alt="Person" width="96" height="96">
+  Hariza (mother) - 0199502177
+</div>
+<div class="chip">
+  <img src="./cir/photo_2020-05-07_03-45-56.jpg" alt="Person" width="96" height="96">
+  Syazwani (sister) - 0109029708
+</div>
+<div class="chip">
+  <img src="./cir/IMG_E9310.JPG" alt="Person" width="96" height="96">
+  Daniel (brother) - 0142141312
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
+<div style="text-align:center">  
+<audio controls autoplay>
+  <source src="./cir/yourdoglovesyou.ogg" type="audio/ogg" style="center">
+  <source src="./cir/yourdoglovesyou.mp3" type="audio/mpeg">
+</audio>
+</div>
+</div>
+<script>
+// Automatic Slideshow - change image every 2 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000);    
+}
+
+</script>
+
+<div class="footer">
+	<h4 id="para1"> "As the saying goes, take as big as a step as possible while chasing your dreams, even it may be only the tiny one" </i> </h4>
+</div>

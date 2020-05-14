@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<title></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+
+/* T Y P E */
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 350px; /* Should be removed. Only for demonstration */
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* C O L U M N */
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+  height: 270px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create three equal columns that floats next to each other */
+.column2 {
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+  height: 370px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* I M A G E */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* F O O T E R */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #bbb;
+  margin-top: 20px;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+#para1 {
+text-align: center;
+font-family: "Lato", sans-serif; font-size: 12px;
+
+.table {
+	color:#5F9EA0;
+	}
+	
+.button {
+float: right;}   
+
+
+
+
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="copy.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="hobbies.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOBBIES</a>
+	    <a href="education.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EDUCATION</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+	<a href="test2.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FEEDBACK</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="hobbies.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOBBIES</a>
+    <a href="education.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">EDUCATION</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="test2.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FEEDBACK</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  </div>
+  	<div class="mySlides w3-display-container w3-center">
+    <img src="./cir/last.png" style="width:70%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">  
+    </div>
+	</div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="./cir/last2.png" style="width:70%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="./cir/last3.png" style="width:70%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+    </div>
+  </div>
+<hr>
+  
+    <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
+    <h2 class="w3-wide">THE PROFILE</h2>
+	    <p class="w3-opacity"><i>Describe yourself in a perfect way</i></p>
+		<p class="w3-opacity"><i>Who I am? That’s a secret. No, actually, I'm gonna tell you but only quarter of my life huhu</i></p>
+</div>
+	 <div class="w3-black">
+  
+    <div class="w3-container w3-content w3-padding-64" style="max-width:1000px">
+	  <h2 class="w3-wide w3-center">SYAHIRAH MOKHTAR </h2>
+	  <br>
+	  <div class="row2">
+  <div class="column2" style="background-color:white;">
+    <img src="./cir/photo_2020-05-09_14-22-06.jpg" style="width:100%">
+	<p></p>
+  </div>
+  <div class="column2" style="background-color:white;">
+    <img src="./cir/photo_2020-05-09_14-22-09.jpg" style="width:100%">
+  </div>
+  <div class="column2" style="background-color:white;">
+    <img src="./cir/photo_2020-05-09_14-22-07.jpg" style="width:100%">
+	<p></p>
+  </div>  
+</div>
+
+	<br>
+    <p class="w3-center"><i>Born in 7th December 1999 at Pasir Mas Kelantan, I'm now 21 years old, who come from the middle class family.
+	I moved a lot, from KL to JB and finally Kuantan. I have stayed in Kuantan for almost 16 years. It's funny right? Someone who born in Kelantan,
+	never grow up there. Hence, I didn't speak "kelate" much till I met my degree friends, where most of them are from Kelantan. I learnt from them and yes, I can 
+	"kecek" now, a bit... but still it sounds weird. I'm a modern thinker and have always been an achiever, be it academics or professional life or sports 
+	or any other field in my life. I believe in success through hard work, tolerance, & dedication.
+	The most important thing in my life is religious believes, moral values & respect for elders, that's how my parents taught me.
+	Speaking about them, my dad (Mokhtar Mohd Isa) born in Johor and mom (Hariza Mohamad) born in Kelantan. Yes, we're both Kelatanese huhu.
+	I'm the second one out of four in my family but my parents, uncles, and even my grandpa still call me "adik".
+	My nickname haven't changed yet even I've got two younger siblings lol perks of being december baby i guess? 
+	Anyway, Syahirah. That's what you can call me! </i></p>
+	<br>
+	<br>
+	<br>
+	<br>
+	  <h2 class="w3-wide w3-center">BIRTH SIGN</h2>
+	  <p class="w3-center"> <i>Independent and strong-willed, Sagittarius personalities are all about going off the beaten path. 
+	  Sagittarius isn’t afraid to step away from the pack, and is a natural born leader who goes after what 
+	  he or she wants, regardless of what other people think.</i> </p>
+	  <br>
+	<div class="row">
+  <div class="column" style="background-color:white;">
+    <img src="./cir/sign2.jpg" style="width:70%">
+	<p><i>Ruling Planet: Jupiter</i></p>
+  </div>
+  <div class="column" style="background-color:white;">
+    <img src="./cir/sign.png" style="width:70%">
+	<p><i> Spirit Color: Light Blue </i></p>
+  </div>
+  <div class="column" style="background-color:white;">
+    <img src="./cir/sign.jpg" style="width:70%">
+	<p><i>Flower: Carnations & crocuses</i></p>
+  </div>  
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+  <h4 class="w3-wide w3-center">READ MORE ABOUT ME ON HOBBIES, EDUCATION AND CONTACT. ENJOY YOURSELF, READERS! </h4>
+  <br>
+  <br>
+  <br>
+  
+  <div style="text-align:center"> 
+<button onclick="playVid()" type="button">PLAY</button>
+<button onclick="pauseVid()" type="button">PAUSE</button><br> 
+  <br><br>
+  <video id="myVideo" width="420">
+    <source src="./cir/test.mp4" type="video/mp4">
+    <source src="./cir/test.ogg" type="video/ogg">
+  </video>
+</div> 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <div style="text-align:center"> 
+  
+<audio controls autoplay>
+  <source src="./cir/yourdoglovesyou.ogg" type="audio/ogg" style="center">
+  <source src="./cir/yourdoglovesyou.mp3" type="audio/mpeg">
+</audio>
+</div>
+
+
+
+
+</div>
+
+
+	
+	<script>
+// Automatic Slideshow - change image every 2 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000);    
+}
+
+
+//button ()
+var vid = document.getElementById("myVideo"); 
+myVideo.height = 400; 
+function playVid() { 
+  vid.play(); 
+} 
+
+function pauseVid() { 
+  vid.pause(); 
+} 
+
+</script>
+
+<div class="footer">
+	<h4 id="para1"> "As the saying goes, take as big as a step as possible while chasing your dreams, even it may be only the tiny one" </i> </h4>
+</div>

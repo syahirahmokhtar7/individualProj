@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+
+/* C O L U M N */
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 350px; /* Should be removed. Only for demonstration */
+  color: black;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* F O O T E R */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #bbb;
+  margin-top: 20px;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+#para1 {
+text-align: center;
+font-family: "Lato", sans-serif; font-size: 12px;
+
+
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="copy.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="hobbies.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOBBIES</a>
+	    <a href="education.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EDUCATION</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+	<a href="test2.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FEEDBACK</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="hobbies.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOBBIES</a>
+    <a href="education.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">EDUCATION</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="test2.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FEEDBACK</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="./cir/picky.png" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">  
+    </div>
+  </div>
+    <div class="mySlides w3-display-container w3-center">
+    <img src="./cir/stroll.png" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="./cir/beauty.png" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">  
+    </div>
+  </div>
+    <div class="mySlides w3-display-container w3-center">
+    <img src="./cir/art.png" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">  
+    </div>
+  </div>
+
+
+  
+    <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+  <br>
+    <h2 class="w3-wide">CURRENT OBSESSION</h2>
+    <p class="w3-opacity"><i>A contradiction where it takes work but turns it into leisure</i></p>
+	<p class="w3-opacity"><i>Make a time to follow your passion and take a back seat</i></p>
+	<p class="w3-opacity"><i>Here is what i often do, enjoy!</i></p>
+    <p class="w3-justify"></p>
+	</div>
+	
+		
+		 <!-- The Body Section -->
+  <div class="w3-black">
+  
+    <div class="w3-container w3-content w3-padding-64" style="max-width:1000px">
+	  <h2 class="w3-wide w3-center">FOOD HUNTING</h2>
+	  <br>
+	<div class="row">
+  <div class="column" style="background-color:white;">
+    <img src="./cir/photo_2020-05-01_01-08-20.jpg" style="width:100%">
+	<p><i>Desserts at Rasa Sayang Coffee Shop for hi-tea, i would rate... em maybe (3.5/5)</i></p>
+  </div>
+  <div class="column" style="background-color:white;">
+    <img src="./cir/photo_2020-05-06_21-02-13.jpg" style="width:100%">
+	<p><i>Went to Italiannies just to had this (i'm really not into it but it was ok)<i></p>
+  </div>
+  <div class="column" style="background-color:white;">
+    <img src="./cir/photo_2020-05-06_21-02-20.jpg" style="width:100%">
+	<p><i>My day wouldn't be completed without my forever favourite drink- "teh beng"<i> </p>
+  </div>
+  <div class="column" style="background-color:white; ">
+    <img src="./cir/photo_2020-05-06_21-02-11.jpg" style="width:100%">
+    <p><i>Spaghetti at Beanz & Co is totally cramp my style! totally the best one i've ever had<i></p>
+  </div>  
+</div>
+<br>
+<br>
+<div class="w3-container">
+  <table class="w3-table-all w3-centered">
+    <thead>
+      <tr class="w3-teal">
+    <th>Top Dish</th>
+    <th>Dish Name</th>
+    <th>Rate</th>
+	</tr>
+	</thead>
+  <tr class="w3-light-grey w3-hover-teal">
+    <td><a href="https://www.facebook.com/ProjektMakan">1</td>
+    <td>Spaghetti Alfredo in Lamb / Shrimp</td>
+    <td>10/10</td>
+  </tr>
+    <tr class="w3-light-grey w3-hover-teal">
+    <td>2</td>
+    <td>Nasi Goreng Kampung + Telur Data (A combo)</td>
+    <td>10/10</td>
+  </tr>
+  <tr class="w3-light-grey w3-hover-teal">
+    <td><a href="https://www.instagram.com/kulacakes/?hl=en">3</td>
+    <td>Mango Cheese Cake (only in Kula Cakes)</td>
+    <td>8/10</td>
+  </tr>
+  <tr class="w3-light-grey w3-hover-teal">
+    <td>4</td>
+    <td>Teh Beng Kaw Kaw</td>
+    <td>10/10</td>
+  </tr>
+ </table>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+	  <h2 class="w3-wide w3-center">TAKE A WALK</h2>
+	  <br>
+	<div class="row">
+  <div class="column" style="background-color:white;">
+    <img src="./cir/photo_2020-05-06_19-35-35.jpg" style="width:100%">
+	<p><i>Pardon me but you're not a local if you haven't go to the historial city, Melaka<i></p>
+  </div>
+  <div class="column" style="background-color:white;">
+    <img src="./cir/photo_2020-05-06_19-35-34.jpg" style="width:100%">
+	<p><i>Among the highest tower in the world, here is our Petronas Twin Tower, beautiful inside out!<i></p>
+  </div>
+  <div class="column" style="background-color:white;">
+    <img src="./cir/photo_2020-05-06_19-35-32.jpg" style="width:100%">
+	<p><i>Hometown village, where? Take a guess.<i></p>
+  </div>
+  <div class="column" style="background-color:white; ">
+    <img src="./cir/photo_2020-05-01_01-08-18.jpg" style="width:100%">
+    <p><i>Go and take a ride if whenever you feel overwhelmed, have some fun gang!<i></p>
+  </div>  
+</div>
+<br>
+<br>
+<br>
+<br>
+
+	  <h2 class="w3-wide w3-center">COLLECTING SKINCARE & MAKEUP</h2>
+	  <br>
+	<div class="row">
+  <div class="column" style="background-color:white;">
+    <img src="./cir/photo_2020-05-01_01-08-21.jpg" style="width:100%">
+	<p><i>This one is worth every single bucks $$$ go for this if you want a plump skin</i></p>
+  </div>
+  <div class="column" style="background-color:white;">
+    <img src="./cir/photo_2020-05-01_01-08-23.jpg" style="width:100%">
+	<p><i>Every woman should have their own go-to makeup, here are mine!</i></p>
+  </div>
+  <div class="column" style="background-color:white;">
+    <img src="./cir/photo_2020-05-06_19-35-37.jpg" style="width:100%">
+	<p><i>A fan of klairs since i sneaked out into my sister's room and tried hers, so i got one!</i></p>
+  </div>
+  <div class="column" style="background-color:white; ">
+    <img src="./cir/photo_2020-05-06_19-35-36.jpg" style="width:100%">
+    <p><i>Rihanna... Who??? Umbrella... Who??? Fenty... Who??? </i></p>
+  </div>  
+</div>
+<br>
+<br>
+<div class="w3-container">
+  <table class="w3-table-all w3-centered">
+    <thead>
+      <tr class="w3-teal">
+    <th>Brand Name</th>
+    <th>Product Name</th>
+    <th>Review</th>
+	</tr>
+	</thead>
+  <tr class="w3-light-grey w3-hover-teal">
+    <td> <a href="https://www.sephora.my/brands/pixi?q=pixi">Pixi</td>
+    <td>Pixi Glow Tonic and Rose Tonic</td>
+    <td>10/10 super hydrating</td>
+  </tr>
+    <tr class="w3-light-grey w3-hover-teal">
+    <td> <a href="https://www.hermo.my/brand/278-klairs?ucf=product_detail">Klairs</td>
+    <td>Unscented Supple Preparation Toner and Freshly Juiced Vitamin Drop</td>
+    <td>a must! my holy grail</td>
+  </tr>
+  <tr class="w3-light-grey w3-hover-teal">
+    <td><a href="https://www.muji.com/my/">Muji</td>
+    <td>Moisturizing Milk in Moisture </td>
+    <td>8/10 a bit sticky</td>
+  </tr>
+  <tr class="w3-light-grey w3-hover-teal">
+    <td> <a href="https://www.sephora.my/brands/mac-cosmetics?q=mac%20">Mac Cosmetics</td>
+    <td>Satin Lipstick in Retro and Matte Lipstick in Mocha</td>
+    <td>good for an occassion!</td>
+  </tr>
+    <tr class="w3-light-grey w3-hover-teal">
+    <td><a href="https://www.velvetvanitycosmetics.com/">Velvet Vanity</td>
+    <td>Super Slim Stick in Muhney Honey</td>
+    <td>10/10</td>
+  </tr>
+  <tr class="w3-light-grey w3-hover-teal">
+      <td><a href="https://www.wetnwildbeauty.com/">Wet n Wild</td>
+    <td>Color Icon Blusher in Mellow Wine</td>
+    <td>just nice and pigmentation is good </td>
+  </tr>
+ </table>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+	  <h2 class="w3-wide w3-center">PHOTOGRAPHY</h2>
+	  <br>
+	<div class="row">
+  <div class="column" style="background-color:white;">
+    <img src="./cir/photo_2020-05-06_19-35-31.jpg" style="width:100%">
+	<p><i>#MARVEL10MY exhibition at Pavilion Elite is a must-visit especially if you're a fan of Marvel! Isn't it cool?</i></p>
+  </div>
+  <div class="column" style="background-color:white;">
+    <img src="./cir/photo_2020-05-06_19-35-26.jpg" style="width:100%">
+	</p><i>Don't remember where this photo was taken but i guess i took this because of the colourful kinda-rope </i></p>
+  </div>
+  <div class="column" style="background-color:white;">
+    <img src="./cir/photo_2020-05-06_19-34-58.jpg" style="width:100%">
+	<p><i>Minimal background at a cake shop, the struggle to take this is real...</i></p>
+  </div>
+  <div class="column" style="background-color:white; ">
+    <img src="./cir/photo_2020-05-06_19-34-57.jpg" style="width:100%">
+    <p><i>Good morning, have you had your breakfast yet? - Taken at Pagi & Daisy</i></p>
+  </div>  
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2 class="w3-wide w3-center">CHILLIN WITH NETFLIX</h2>
+	  <br>
+	<div class="row">
+  <div class="column" style="background-color:white;">
+    <video id = "myVideo" width="200" height="150" controls>
+  <source src="./cir/marvel.mp4" type="video/mp4">
+  <source src="./cir/marvel.ogg" type="video/ogg">
+</video>
+	<p><i>A fan of marvel won't turn a blind eye on this! Marvel's Agents of Shield Season 7 coming soon! I'm excited yas</i></p>
+  </div>
+  <div class="column" style="background-color:white;">
+    <video width="200" height="150" controls>
+  <source src="./cir/peakyblinders.mp4" type="video/mp4">
+  <source src="./cir/peakyblinders.ogg" type="video/ogg">
+</video>
+	</p><i>Business?? Strategiess?? War?? Watch Peaky Blinders! </i></p>
+  </div>
+  <div class="column" style="background-color:white;">
+   <video width="200" height="150" controls>
+  <source src="./cir/shadowhunters.mp4" type="video/mp4">
+  <source src="./cir/shadowhunters.ogg" type="video/ogg">
+</video>
+	<p><i>Interested about supernatural show??? ShadowHunters is the best option! #izzyforlyfe</i></p>
+  </div>
+  <div class="column" style="background-color:white; ">
+   <video width="200" height="150" controls>
+  <source src="./cir/strangerthings.mp4" type="video/mp4">
+  <source src="./cir/strangerthings.ogg" type="video/ogg">
+</video>
+    <p><i>The best one I swear!! Stranger Things is all about powers too!</i></p>
+  </div>  
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2 class="w3-wide w3-center">TUNE ON MUSIC</h2>
+	  <br>
+	<div class="row">
+  <div class="column" style="background-color:white;">
+    <img src="./cir/dog.jpg" style="width:100%">
+	<p><i>Your dog loves you by Colde #k-indieforlife</i></p>
+  </div>
+  <div class="column" style="background-color:white;">
+    <img src="./cir/idont.jpg" style="width:100%">
+	</p><i>I don't love you by Urban Zakapa, deep inside!  </i></p>
+  </div>
+  <div class="column" style="background-color:white;">
+    <img src="./cir/arctic.jpg" style="width:100%">
+	<p><i>Do I Wanna Know by Arctic Monkey </i></p>
+  </div>
+  <div class="column" style="background-color:white; ">
+    <img src="./cir/greedy.jpg" style="width:100%">
+    <p><i>Greedy by Ariana Grande, more upbeating!</i></p>
+  </div>  
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <div style="text-align:center"> 
+  
+<audio controls autoplay>
+  <source src="./cir/yourdoglovesyou.ogg" type="audio/ogg" style="center">
+  <source src="./cir/yourdoglovesyou.mp3" type="audio/mpeg">
+</audio>
+</div>
+</div>
+<script>
+// Automatic Slideshow - change image every 2 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000);    
+}
+
+
+</script>
+
+<div class="footer">
+	<h4 id="para1"> "As the saying goes, take as big as a step as possible while chasing your dreams, even it may be only the tiny one" </i> </h4>
+</div>
